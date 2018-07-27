@@ -42,6 +42,7 @@ while True:
 
         # resize the frames to be smaller and switch to gray scale
         frame = imutils.resize(frame, width=700)
+        frame = cv2.flip(frame,1)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
         # Make copies of the frame for transparency processing
